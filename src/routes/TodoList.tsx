@@ -1,5 +1,40 @@
-import React from 'react';
+import { useForm } from 'react-hook-form';
 
 export default function TodoList() {
-  return <div>TodoList</div>;
+  const { register, watch } = useForm();
+  console.log(watch());
+
+  return (
+    <div>
+      <form>
+        <input {...register('email')} type="text" placeholder="white a todo" />
+        <input
+          {...register('firstName')}
+          type="text"
+          placeholder="white a todo"
+        />
+        <input
+          {...register('lastName')}
+          type="text"
+          placeholder="white a todo"
+        />
+        <input
+          {...register('userName')}
+          type="text"
+          placeholder="white a todo"
+        />
+        <input
+          {...register('passWord')}
+          type="text"
+          placeholder="white a todo"
+        />
+        <input
+          {...register('passWord1')}
+          type="text"
+          placeholder="white a todo"
+        />
+        <button>Add</button>
+      </form>
+    </div>
+  );
 }
