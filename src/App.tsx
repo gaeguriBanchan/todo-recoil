@@ -26,6 +26,7 @@ time, mark, audio, video {
   vertical-align: baseline;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
+  list-style: none;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
